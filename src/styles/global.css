@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  /* === Color === */
+  --color-violet-100: #f2f0f8;
+  --color-violet-200: #ebe9f5;
+  --color-violet-300: #d5d1ea;
+  --color-violet-400: #7869bc;
+  --color-violet-500: #6c5fa9;
+  --color-violet-600: #605496;
+  --color-violet-700: #5a4f8d;
+  --color-violet-800: #483f71;
+  --color-violet-900: #362f55;
+
+  --color-gray-100: #fcfcfc;
+  --color-gray-200: #efefef;
+  --color-gray-300: #dfdfdf;
+  --color-gray-400: #b7b7b7;
+  --color-gray-500: #949494;
+  --color-gray-600: #777777;
+  --color-gray-700: #555555;
+  --color-gray-800: #2a2a2a;
+  --color-gray-900: #111111;
+
+  --color-red: #ff334b;
+  --color-blue: #335fff;
+
+  /* === Font === */
+  --font-notosans: "Noto Sans KR";
+}
+
+@layer base {
+  html {
+    font-family: var(--font-notosans);
+  }
+}
+
+/* === Typography === */
+
+/* Heading */
+@utility text-heading1 {
+  font-size: 3rem;
+  line-height: 4.09rem;
+}
+
+@utility text-heading2 {
+  font-size: 3rem;
+  line-height: 3.41rem;
+}
+
+@utility text-heading3 {
+  font-size: 2rem;
+  line-height: 2.73rem;
+}
+
+/* Title */
+@utility text-title1 {
+  font-size: 1.8rem;
+  line-height: 2.38rem;
+}
+
+@utility text-title2 {
+  font-size: 1.5rem;
+  line-height: 2.05rem;
+}
+
+@utility text-title3 {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+
+/* Body */
+@utility text-body1 {
+  font-size: 1.1rem;
+  line-height: 1.53rem;
+}
+
+@utility text-body2 {
+  font-size: 1rem;
+  line-height: 1.36rem;
+}
+
+@utility text-body3 {
+  font-size: 0.88rem;
+  line-height: 1.19rem;
+}
+
+@utility text-body4 {
+  font-size: 0.9rem;
+  line-height: 1.02rem;
+}
+
+@utility text-body5 {
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+}
