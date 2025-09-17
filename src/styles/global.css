@@ -26,6 +26,9 @@
   --color-red: #ff334b;
   --color-blue: #335fff;
 
+  --color-white: #ffffff;
+  --color-black: #000000;
+
   /* === Font === */
   --font-notosans: "Noto Sans KR";
 }
