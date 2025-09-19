@@ -1,7 +1,15 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  // TurboPack 설정
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/home',
+        permanent: true,
+      },
+    ]
+  },
   experimental: {
     turbo: {
       rules: {
@@ -12,9 +20,8 @@ const nextConfig: NextConfig = {
       },
     },
   },
-  // webpack 설정
   webpack: (config) => {
-    // @ts-expect-error 타입 에러 무시
+    // @ts-expect-error
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg'),
     )
