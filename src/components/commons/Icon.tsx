@@ -21,11 +21,8 @@ function renderIcon(icon: IconTypes) {
   }
 }
 
-export default function Icon({
-  type,
-  color = 'text-gray-900',
-  className,
-}: IconProps) {
+export default function Icon(props: IconProps) {
+  const { type, color = 'text-gray-900', className } = props
   return (
     <span
       className={`inline-block fill-current align-middle [&_*]:fill-current ${color} ${className}`}
