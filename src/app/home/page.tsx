@@ -2,6 +2,7 @@ import Button from '@/components/commons/Button'
 import InfoVertical from './_components/InfoVertical'
 import InfoHorizontal from './_components/InfoHorizontal'
 import { verticalInfos, horizontalInfos } from '@/assets/mocks/landing'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         </span>
         <span className="flex gap-6">
           <Button color="primary" size="lg">
-            센터찾기
+            <Link href={`/centers`}>센터찾기</Link>
           </Button>
           <Button color="secondary" size="lg" isReady={false}>
             센터입점 하기
