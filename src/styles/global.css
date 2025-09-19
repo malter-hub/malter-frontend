@@ -36,6 +36,18 @@
 @layer base {
   html {
     font-family: var(--font-notosans);
+    background-color: #fff;
+  }
+
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: max-content;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
