@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function GlobalHeader() {
   return (
-    <header className="flex w-[1440px] items-center justify-between px-30 py-8">
+    <header className="flex w-full items-center justify-between px-30 py-8">
       <div className="flex flex-col items-start justify-start gap-2.5 p-1">
         <Link href={`/home`}>
           <MalterTextBoldIcon height={32} />
@@ -12,9 +12,9 @@ export default function GlobalHeader() {
       </div>
       <div className="flex items-center justify-start gap-9">
         <div className="flex items-center justify-start gap-4">
-          <Button color="tertiary">
-            <Link href={`/centers`}>센터찾기</Link>
-          </Button>
+          <Link href={`/centers`}>
+            <Button color="tertiary">센터찾기</Button>
+          </Link>
           <Button color="tertiary" isReady={false}>
             센터입점
           </Button>

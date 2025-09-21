@@ -42,7 +42,8 @@
   body {
     max-width: 1440px;
     margin: 0 auto;
-    width: max-content;
+    /* width: fit-content; */
+    min-width: 390px;
   }
 
   main {

@@ -1,5 +1,6 @@
 import MalterTextBoldIcon from '@/assets/icons/logos/malterTextBold.svg'
 import Icon from './commons/Icon'
+import Link from 'next/link'
 
 export default function GlobalFooter() {
   return (
@@ -21,7 +22,16 @@ export default function GlobalFooter() {
             </div>
           </div>
           <div className="flex items-center justify-start gap-4">
-            <Icon type="instagram" color="text-black" className="h-10 w-10" />
+            <Link
+              href="https://www.instagram.com/malter_official?igsh=MTRjOXhyb2R6OXFwNg=="
+              target="_blank"
+            >
+              <Icon
+                type="instagram"
+                color="text-black"
+                className="h-10 w-10"
+              />{' '}
+            </Link>
           </div>
         </div>
       </div>

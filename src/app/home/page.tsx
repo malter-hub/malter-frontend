@@ -17,9 +17,11 @@ export default function Home() {
           </p>
         </span>
         <span className="flex gap-6">
-          <Button color="primary" size="lg">
-            <Link href={`/centers`}>센터찾기</Link>
-          </Button>
+          <Link href={`/centers`}>
+            <Button color="primary" size="lg">
+              센터찾기
+            </Button>
+          </Link>
           <Button color="secondary" size="lg" isReady={false}>
             센터입점 하기
           </Button>
