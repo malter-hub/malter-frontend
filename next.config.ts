@@ -10,16 +10,6 @@ const nextConfig: NextConfig = {
       },
     ]
   },
-  experimental: {
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
-      },
-    },
-  },
   webpack: (config) => {
     // @ts-expect-error
     const fileLoaderRule = config.module.rules.find((rule) =>
