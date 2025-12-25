@@ -30,7 +30,7 @@ export default function CenterItem(props: IProps) {
       />
 
       <div className="flex w-full md:w-80 flex-col gap-3">
-        <div className="flex flex-col gap-1.5 bg-red-500">
+        <div className="flex flex-col gap-1.5">
           <div className="flex items-end justify-start gap-2 flex-wrap">
             <p className="text-title3 text-left font-semibold text-black">
               {name}
