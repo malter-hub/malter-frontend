@@ -1,7 +1,10 @@
 'use client'
 
 import { tv, type VariantProps } from 'tailwind-variants'
-import Icon from './Icon'
+import Image from 'next/image'
+import CommentIcon from '@/public/icons/comment.svg'
+import FavoriteIcon from '@/public/icons/favorite.svg'
+
 
 const chip = tv(
   {
@@ -45,8 +48,18 @@ export default function SocialChip(props: ChipProps) {
 
   return (
     <div className={base()}>
-      {styleType === 'comment' && <Icon type="comment" className={icon()} />}
-      {styleType === 'favorite' && <Icon type="favorite" className={icon()} />}
+      {styleType === 'comment' && <Image
+        src={CommentIcon}
+        width={20}
+        height={20}
+        alt="Instagram Logo"
+      />}
+      {styleType === 'favorite' && <Image
+        src={FavoriteIcon}
+        width={20}
+        height={20}
+        alt="Instagram Logo"
+      />}
       <span className={text()}>{value}</span>
     </div>
   )

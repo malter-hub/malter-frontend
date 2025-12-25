@@ -2,7 +2,7 @@ import Button from '@/components/commons/Button'
 
 export default function LocationFilter() {
   return (
-    <span className="flex gap-5">
+    <span className="flex gap-3 md:gap-5">
       <Button color="tertiary" size="md">
         전체
       </Button>
@@ -17,12 +17,6 @@ export default function LocationFilter() {
       </Button>
       <Button color="tertiary" size="md">
         대구
-      </Button>
-      <Button color="tertiary" size="md">
-        광주
-      </Button>
-      <Button color="tertiary" size="md">
-        강릉
       </Button>
     </span>
   )

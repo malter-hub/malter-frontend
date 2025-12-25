@@ -1,6 +1,6 @@
 import CenterList from './_components/CenterList'
 import LocationFilter from './_components/LocationFilter'
-import Pager from './_components/Pager'
+
 
 export default function Centers() {
   return (
@@ -12,7 +12,6 @@ export default function Centers() {
         <LocationFilter />
       </div>
       <CenterList />
-      {/* <Pager /> */}
     </div>
   )
 }

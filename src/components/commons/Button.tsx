@@ -6,7 +6,7 @@ import { tv, type VariantProps } from 'tailwind-variants'
 const button = tv(
   {
     slots: {
-      base: 'group not-prose inline-flex justify-center items-center gap-2.5 rounded-[100px] cursor-pointer',
+      base: 'group not-prose inline-flex justify-center items-center gap-2.5 rounded-[100px] cursor-pointer w-full',
       text: '',
       icon: 'size-5',
     },
@@ -42,23 +42,30 @@ interface ButtonProps extends ButtonVariants {
   leftIcon?: React.ReactElement
   rightIcon?: React.ReactElement
   isReady?: boolean
+  onClick?: () => void
+  className?: string
 }
 
 export default function Button(props: ButtonProps) {
   const {
+    onClick,
     leftIcon,
     rightIcon,
     children,
     size = 'sm',
     color = 'primary',
     isReady = true,
+    className,
   } = props
   const { base, text, icon } = button({ color, size })
 
   const showNotice = () => alert('준비중입니다')
 
   return (
-    <button className={base()} onClick={isReady ? undefined : showNotice}>
+    <button
+      className={className ? `${base()} ${className}` : base()}
+      onClick={isReady ? onClick : showNotice}
+    >
       {leftIcon ? <span className={icon()}>{leftIcon}</span> : null}
       <span className={text()}>{children}</span>
       {rightIcon ? <span className={icon()}>{rightIcon}</span> : null}
